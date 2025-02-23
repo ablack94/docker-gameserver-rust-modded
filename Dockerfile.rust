@@ -1,0 +1,5 @@
+FROM cm2network/steamcmd:latest
+
+# Install the rust dedicated server
+RUN ./steamcmd.sh +force_install_dir /home/steam/rust +login anonymous +app_update 258550 +quit
+
